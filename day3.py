@@ -19,8 +19,6 @@ matches = re.findall(r'mul\(\d+,\d+\)|don\'t\(\)|do\(\)', f)
 enabled = True
 p2 = 0
 
-print(matches)
-
 for match in matches:
 
     if match == "don't()":
@@ -34,4 +32,3 @@ for match in matches:
         enabled = True
 
 print("part 2:", p2)
-    
